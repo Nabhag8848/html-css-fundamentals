@@ -1,9 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid red; */
+}
+
 body {
   font-family: sans-serif;
+
   line-height: 1.4;
 }
 
 article {
+  margin: 16vh auto;
+  width: 825px;
   border: 5px solid black;
 }
 
@@ -13,6 +22,8 @@ h3 {
 }
 
 h2 {
+  font-size: 20px;
+  padding: 10px 0;
   text-align: center;
   background-color: #f7f7f7;
 }
@@ -25,6 +36,16 @@ p strong:first-child {
   text-transform: uppercase;
   font-size: 12px;
   color: #999393;
+  margin-bottom: 10px;
+}
+
+.engage-info {
+  margin-bottom: 15px;
+}
+
+.product-details {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 a:link,
@@ -45,13 +66,16 @@ button {
   background-color: black;
   border: none;
   cursor: pointer;
+  width: 100%;
+  padding: 16px 0;
+  height: auto;
+  border-top: 3px solid white;
 }
 
 button:hover {
   color: black;
   background-color: white;
-  border-top: 1px solid #444;
-  border-right: 1px solid #444;
+  border-top: 3px solid black;
 }
 
 h3 {
@@ -61,4 +85,9 @@ h3 {
 
 li {
   list-style: square;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 16px;
 }
