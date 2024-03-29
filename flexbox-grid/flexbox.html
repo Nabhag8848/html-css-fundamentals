@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <style>
+      .el {
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* 
+        flex: 0 0 200px;
+        
+        flex-basis: 200px;
+        flex-shrink: 0; */
+
+        /* 
+        equivalent
+        flex: 1;
+        flex-grow: 1; */
+
+        flex: 1;
+      }
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
+        /* flex-grow: 4; */
+        /* order: 2; */
       }
       .el--2 {
         background-color: orangered;
@@ -18,12 +39,16 @@
       }
       .el--4 {
         background-color: goldenrod;
+        align-self: flex-end;
       }
       .el--5 {
         background-color: palevioletred;
+        align-self: stretch;
+        /* order: 1; */
       }
       .el--6 {
         background-color: steelblue;
+        /* order: -1; */
       }
       .el--7 {
         background-color: yellow;
@@ -40,6 +65,10 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
       }
     </style>
   </head>
