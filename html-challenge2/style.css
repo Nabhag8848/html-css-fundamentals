@@ -2,12 +2,22 @@
   margin: 0;
   padding: 0;
   /* border: 2px solid red; */
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
-
   line-height: 1.4;
+}
+
+.container {
+  /* background-color: red; */
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 article {
@@ -31,17 +41,21 @@ h2 {
 
 p strong:first-child {
   font-size: 24px;
+  float: left;
 }
 
 .free-ship {
   text-transform: uppercase;
   font-size: 12px;
   color: #999393;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  float: right;
 }
 
 .engage-info {
   margin-bottom: 15px;
+  clear: both;
 }
 
 .product-details {
@@ -139,4 +153,23 @@ article::after {
 .colors div:nth-child(6) {
   background-color: brown;
   margin-right: 0;
+}
+
+.product-overview {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 240px;
+  float: left;
+}
+
+.product-detail-info {
+  margin-top: 7px;
+  margin-left: 40px;
+  width: 240px;
+  float: left;
+}
+
+.profile {
+  float: left;
+  clear: both;
 }
