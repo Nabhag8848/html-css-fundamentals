@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  gap: 80px;
+  gap: 75px;
 }
 
 .container {
@@ -44,6 +44,7 @@ aside {
   border-bottom: 5px solid #1098ad;
   padding: 50px 0px;
   width: 500px;
+  flex: 0 0 300px;
 }
 
 .post-header {
@@ -56,10 +57,9 @@ aside {
   margin-bottom: 20px;
 }
 
-article {
-  flex-basis: 1150px;
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 nav {
   font-size: 18px;
