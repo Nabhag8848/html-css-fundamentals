@@ -14,6 +14,7 @@ article {
   margin: 16vh auto;
   width: 825px;
   border: 5px solid black;
+  position: relative;
 }
 
 h2,
@@ -44,12 +45,14 @@ p strong:first-child {
 }
 
 .product-details {
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
 a:link,
 a:visited {
+  margin-bottom: 20px;
+  display: inline-block;
   color: black;
 }
 
@@ -90,4 +93,50 @@ li {
 
 ul {
   padding-left: 16px;
+}
+
+article::after {
+  content: "SALE";
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  color: #fff;
+  background-color: red;
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.colors div {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.colors div:first-child {
+  background-color: black;
+}
+
+.colors div:nth-child(2) {
+  background-color: blue;
+}
+
+.colors div:nth-child(3) {
+  background-color: red;
+}
+
+.colors div:nth-child(4) {
+  background-color: yellow;
+}
+
+.colors div:nth-child(5) {
+  background-color: green;
+}
+
+.colors div:nth-child(6) {
+  background-color: brown;
+  margin-right: 0;
 }
