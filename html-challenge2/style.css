@@ -148,6 +148,7 @@ article::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .product-amount {
@@ -158,13 +159,9 @@ article::after {
 }
 
 .main {
-  flex-basis: 240px;
-  flex-shrink: 0;
-  flex-grow: 0;
+  flex: 1;
 }
 
 .product-more-details {
-  flex-basis: 240px;
-  flex-shrink: 0;
-  flex-grow: 0;
+  flex: 1;
 }
