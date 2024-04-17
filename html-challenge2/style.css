@@ -144,10 +144,20 @@ article::after {
   margin-right: 0;
 }
 
+/* 
+ Flex box container
 .main-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+} */
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.9fr;
+  align-items: center;
+  justify-items: start;
   gap: 20px;
 }
 
