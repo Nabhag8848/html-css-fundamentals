@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .layout {
+        height: 100vh;
+        background-color: rgb(248, 247, 244);
+        display: flex;
+      }
+
+      .side-nav {
+        color: #fff;
+        padding: 20px;
+        background-color: #444;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      main {
+        width: 100vw;
+      }
+      .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(205, 133, 63);
+        padding: 16px 32px;
+      }
+
+      .nav-links a:link,
+      .nav-links,
+      a:visited {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+
+        display: inline-block;
+        padding: 4px;
+      }
+
+      .trash {
+        background: none;
+        border: 1px dashed #444;
+        padding: 8px 16px;
+        color: #fff;
+        background-color: cadetblue;
+      }
+
+      .grid-3-cols {
+        display: grid;
+        grid-template-columns: 400px 1fr 300px;
+      }
+
+      .emails {
+        background-color: aliceblue;
+        border: 1px dashed #444;
+        overflow: scroll;
+        height: calc(100vh - 32px - 36.5px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .emails div {
+        display: inline-block;
+        padding: 32px 96px;
+        background-color: rgb(53, 204, 42);
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 24px;
+      }
+
+      .view-container {
+        font-size: 20px;
+        font-weight: 600;
+        color: #444;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="side-nav">Nav</aside>
+      <main>
+        <nav class="nav-bar">
+          <div class="nav-links">
+            <a href="">New</a>
+            <a href="">Reply</a>
+            <a href="">Forward</a>
+            <a href="">Mark unread</a>
+          </div>
+          <button class="trash">Trash</button>
+        </nav>
+        <div class="grid-3-cols">
+          <aside class="emails">
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+            <div>Email</div>
+          </aside>
+          <div class="view-container">Email View</div>
+          <aside class="view-container">Additional Information</aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
